@@ -1,7 +1,7 @@
 # AERA — Cinematic Next.js Template
 
 A cinematic, scroll-led portfolio template for architecture studios, creative
-practices, and design-led brands. Built with Next.js, React, and plain CSS.
+practices, and design-led brands. Built with Next.js, React, and Tailwind CSS.
 
 Created by Anthony Young.
 
@@ -10,13 +10,14 @@ Created by Anthony Young.
 ## Features
 
 - App Router and TypeScript
+- Tailwind CSS 4 with CSS-first theme tokens
 - Responsive, image-led landing page
 - Scroll-based project transitions and reveal animations
 - Accessible navigation with a mobile menu
 - Optimized local images with `next/image`
 - Open Graph and X/Twitter metadata
 - Centralized content in one typed configuration file
-- No UI framework or animation dependency
+- No component framework or animation dependency
 
 ## Quick start
 
@@ -42,8 +43,8 @@ Most template content lives in
 - SEO title, description, and production URL
 
 Replace the images in `public/images` while keeping their paths, or update the
-paths in the config. The visual theme tokens are at the top of
-[`app/globals.css`](./app/globals.css).
+paths in the config. The Tailwind visual theme tokens are in the `@theme` block
+at the top of [`app/globals.css`](./app/globals.css).
 
 For correct social links in production, copy `.env.example` to `.env.local` and
 set `NEXT_PUBLIC_SITE_URL` to your deployed URL.
@@ -52,11 +53,11 @@ set `NEXT_PUBLIC_SITE_URL` to your deployed URL.
 
 ```text
 app/
-  globals.css          Theme, layout, motion, and responsive styles
+  globals.css          Tailwind import, theme tokens, and shared motion
   layout.tsx           Document shell and metadata
   page.tsx             Home route
 components/
-  aera-experience.tsx  Landing-page sections and interactions
+  aera-experience.tsx  Landing-page sections, Tailwind styles, and interactions
   arrow-icon.tsx       Shared interface icon
 lib/
   site-config.ts       Editable site content and SEO
