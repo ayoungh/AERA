@@ -1,0 +1,41 @@
+{
+  "name": "aera-nextjs-template",
+  "version": "0.1.0",
+  "description": "An open-source cinematic portfolio template built with Next.js.",
+  "author": "Anthony Young",
+  "private": true,
+  "license": "MIT",
+  "type": "module",
+  "engines": {
+    "node": ">=20.9.0"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "next": "^16.2.12",
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8",
+    "sharp": "^0.35.0"
+  },
+  "devDependencies": {
+    "@types/node": "^26.1.1",
+    "@types/react": "^19.2.17",
+    "@types/react-dom": "^19.2.3",
+    "typescript": "^5.9.3"
+  },
+  "overrides": {
+    "postcss": "^8.5.18",
+    "sharp": "^0.35.0"
+  },
+  "keywords": [
+    "nextjs",
+    "portfolio",
+    "landing-page",
+    "architecture",
+    "template"
+  ]
+}
