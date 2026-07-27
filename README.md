@@ -28,7 +28,7 @@ npm run dev
 
 Open [http://localhost:3000](http://localhost:3000).
 
-Requires Node.js 20.9 or newer.
+Requires Node.js 24.
 
 ## Make it yours
 
